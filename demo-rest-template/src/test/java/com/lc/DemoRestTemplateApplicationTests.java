@@ -11,6 +11,7 @@ public class DemoRestTemplateApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("*************************8");
 	}
 
 }
