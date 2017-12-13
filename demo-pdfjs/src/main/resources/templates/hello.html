@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script type="text/javascript">
+        function viewPdf() {
+            alert("test");
+            var curWwwPath=window.document.location.href;
+            var pathName=window.document.location.pathname;
+            var pos=curWwwPath.indexOf(pathName);
+            var localhostPath=curWwwPath.substring(0,pos);
+            window.open(localhostPath+"/pdfjs/web/viewer.html?file=../doc/09.pdf");
+        }
+    </script>
+</head>
+<body>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<h2><button id="viewPdf" onclick="viewPdf()"></button></h2>
+<p th:text="'Hello！, ' + ${name} + '!'" >3333</p>
+</body>
+</html>
