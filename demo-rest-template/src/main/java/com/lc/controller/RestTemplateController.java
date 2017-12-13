@@ -120,6 +120,27 @@ public class RestTemplateController {
         return "success";
     }
 
+    /**
+     * 参数对提交
+     * @return
+     */
+    @RequestMapping("/postByObject2")
+    public String posgByObject2(){
+        MultiValueMap<String,String> reqMap = new LinkedMultiValueMap<>();
+        reqMap.add("id","3");
+        reqMap.add("name","lc002");
+        reqMap.add("desc","test2");
+
+        String url = testUrl + "/getUser1";
+        log.info(url);
+
+        String response =  restTemplate.postForObject(url,reqMap,String.class);
+
+        log.info(response);
+
+        return "success";
+    }
+
 
 
 }
