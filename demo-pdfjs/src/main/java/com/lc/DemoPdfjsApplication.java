@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 *@author liuci
 *@date 2017/12/13
 *@desc https://yq.aliyun.com/articles/40197
+ *     http://blog.csdn.net/xiangcns/article/details/42089189
 */
 @SpringBootApplication
 public class DemoPdfjsApplication {
